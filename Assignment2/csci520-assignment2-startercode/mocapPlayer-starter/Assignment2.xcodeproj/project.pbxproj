@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D65188A40C5E40679A0CC8E4 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 84768C2B43EC4DF09798083E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				6F6C4833267D47CE8260D1EE /* CMake Rules */,
+			);
+			dependencies = (
+				AE971B7AFDB44589B9FFC63C /* PBXTargetDependency */,
+				7DB8DCB08BB540F7BEF686A4 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		FEF97B95B40C426CB4A55E47 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4E0CBD0FCD9A42D194369B99 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E458C0932A054F83ADE1751A /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		22EF62CEDF8C485F9964665F /* interpolate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13A6572E3CEB42979CECCE8F /* interpolate.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		39D64E41A80642C88D685EC1 /* interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABBD09C7E5EE440692376A23 /* interpolator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7747071B961D471AB30EF48E /* skeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11F6488C093241B080061A91 /* skeleton.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7C6B8AA09FA6422B87626BF7 /* posture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B88C732B895A4DBDBD230330 /* posture.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		906BAD21694543D389A1476A /* quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97726F7380D497F88966B4D /* quaternion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B17BE9C9F85D46228190A59E /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2AD6B2630740AE897F58C7 /* vector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CF5566EEFEC24ECE9D556B7A /* motion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6FED108BE464EBF9CD7D619 /* motion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F51BE6C403884041AB35B144 /* transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C0934CF13A3414DAAB133FF /* transform.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E0519C8EFCD41F9B5495D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E0C84D2DD3B4A62B7CBD946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF97B95B40C426CB4A55E47;
+			remoteInfo = ZERO_CHECK;
+		};
+		BB589D8CA98E4114A7F417B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E0C84D2DD3B4A62B7CBD946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF97B95B40C426CB4A55E47;
+			remoteInfo = ZERO_CHECK;
+		};
+		BB9E6F88E1894F47B01B0553 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E0C84D2DD3B4A62B7CBD946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5F784A8AC0C41EF8391A6EC;
+			remoteInfo = interpolator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11F6488C093241B080061A91 /* skeleton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = skeleton.cpp; sourceTree = SOURCE_ROOT; };
+		13A6572E3CEB42979CECCE8F /* interpolate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = interpolate.cpp; sourceTree = SOURCE_ROOT; };
+		3E8151C05B0B4C50909BA379 /* vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = vector.h; sourceTree = SOURCE_ROOT; };
+		40C3E03D726641C88D3E8351 /* transform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = transform.h; sourceTree = SOURCE_ROOT; };
+		496CDB16F9A14F27BBB462A7 /* quaternion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = quaternion.h; sourceTree = SOURCE_ROOT; };
+		5C62D78D75CC4E0F8C0E37E2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5E01516C1C923C0500BCEECA /* ReadMe.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		70DACDB5155242A783B39DAD /* posture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = posture.h; sourceTree = SOURCE_ROOT; };
+		756777CCBE8B446EA8A05258 /* skeleton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = skeleton.h; sourceTree = SOURCE_ROOT; };
+		7C0934CF13A3414DAAB133FF /* transform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = transform.cpp; sourceTree = SOURCE_ROOT; };
+		7FB5418A9E0A4D06AF6F749E /* motion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = motion.h; sourceTree = SOURCE_ROOT; };
+		ABBD09C7E5EE440692376A23 /* interpolator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = interpolator.cpp; sourceTree = SOURCE_ROOT; };
+		B88C732B895A4DBDBD230330 /* posture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = posture.cpp; sourceTree = SOURCE_ROOT; };
+		B97726F7380D497F88966B4D /* quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		BD3AC74A2B914C5084AB0668 /* interpolator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = interpolator; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39F4FC6186D43F4B5A35662 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D4523EBE3327406781D1693D /* interpolator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = interpolator.h; sourceTree = SOURCE_ROOT; };
+		E6FED108BE464EBF9CD7D619 /* motion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = motion.cpp; sourceTree = SOURCE_ROOT; };
+		FE7D7E2A80474EBB863ECACC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FF2AD6B2630740AE897F58C7 /* vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = vector.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09A51462C5C445CEA1751247 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				13A6572E3CEB42979CECCE8F /* interpolate.cpp */,
+				ABBD09C7E5EE440692376A23 /* interpolator.cpp */,
+				E6FED108BE464EBF9CD7D619 /* motion.cpp */,
+				B88C732B895A4DBDBD230330 /* posture.cpp */,
+				B97726F7380D497F88966B4D /* quaternion.cpp */,
+				11F6488C093241B080061A91 /* skeleton.cpp */,
+				7C0934CF13A3414DAAB133FF /* transform.cpp */,
+				FF2AD6B2630740AE897F58C7 /* vector.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1D58D2BF01E643EA95E6B9E1 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4523EBE3327406781D1693D /* interpolator.h */,
+				7FB5418A9E0A4D06AF6F749E /* motion.h */,
+				70DACDB5155242A783B39DAD /* posture.h */,
+				496CDB16F9A14F27BBB462A7 /* quaternion.h */,
+				756777CCBE8B446EA8A05258 /* skeleton.h */,
+				40C3E03D726641C88D3E8351 /* transform.h */,
+				3E8151C05B0B4C50909BA379 /* vector.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5395F46CF80B46CD9F4AEA6E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				53E4C09CEFF04D6B81EA50A9 /* CMake Rules */,
+				C39F4FC6186D43F4B5A35662 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		53E4C09CEFF04D6B81EA50A9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6B786FD9BC5C41D8B882ECB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD3AC74A2B914C5084AB0668 /* interpolator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1EF0F08BEF948D2B85DE3B4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B7B010A4543447728A92DA70 /* interpolator */,
+				5395F46CF80B46CD9F4AEA6E /* ALL_BUILD */,
+				D6C9A1C0686147919B82D1F2 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		B7B010A4543447728A92DA70 /* interpolator */ = {
+			isa = PBXGroup;
+			children = (
+				09A51462C5C445CEA1751247 /* Source Files */,
+				1D58D2BF01E643EA95E6B9E1 /* Header Files */,
+				5C62D78D75CC4E0F8C0E37E2 /* CMakeLists.txt */,
+				5E01516C1C923C0500BCEECA /* ReadMe.rtf */,
+			);
+			name = interpolator;
+			sourceTree = "<group>";
+		};
+		D0BA311B9BE941D7AD438EEC = {
+			isa = PBXGroup;
+			children = (
+				B1EF0F08BEF948D2B85DE3B4 /* Sources */,
+				E5B5FDC4BCD346E58F1A3CAC /* Resources */,
+				6B786FD9BC5C41D8B882ECB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6C9A1C0686147919B82D1F2 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				E8F902C028734C2899C8E213 /* CMake Rules */,
+				FE7D7E2A80474EBB863ECACC /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		E5B5FDC4BCD346E58F1A3CAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E8F902C028734C2899C8E213 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5F784A8AC0C41EF8391A6EC /* interpolator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3B6589DE01481E80726F9F /* Build configuration list for PBXNativeTarget "interpolator" */;
+			buildPhases = (
+				0A9389F72FFD42F78493477A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE3CF18D812847C9A8BD8CDC /* PBXTargetDependency */,
+			);
+			name = interpolator;
+			productName = interpolator;
+			productReference = BD3AC74A2B914C5084AB0668 /* interpolator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E0C84D2DD3B4A62B7CBD946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 79CED2746D6F4F0282119605 /* Build configuration list for PBXProject "Assignment2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0BA311B9BE941D7AD438EEC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65188A40C5E40679A0CC8E4 /* ALL_BUILD */,
+				FEF97B95B40C426CB4A55E47 /* ZERO_CHECK */,
+				C5F784A8AC0C41EF8391A6EC /* interpolator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F6C4833267D47CE8260D1EE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter -f /Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E458C0932A054F83ADE1751A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter -f /Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A9389F72FFD42F78493477A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EF62CEDF8C485F9964665F /* interpolate.cpp in Sources */,
+				39D64E41A80642C88D685EC1 /* interpolator.cpp in Sources */,
+				CF5566EEFEC24ECE9D556B7A /* motion.cpp in Sources */,
+				7C6B8AA09FA6422B87626BF7 /* posture.cpp in Sources */,
+				906BAD21694543D389A1476A /* quaternion.cpp in Sources */,
+				7747071B961D471AB30EF48E /* skeleton.cpp in Sources */,
+				F51BE6C403884041AB35B144 /* transform.cpp in Sources */,
+				B17BE9C9F85D46228190A59E /* vector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DB8DCB08BB540F7BEF686A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5F784A8AC0C41EF8391A6EC /* interpolator */;
+			targetProxy = BB9E6F88E1894F47B01B0553 /* PBXContainerItemProxy */;
+		};
+		AE3CF18D812847C9A8BD8CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF97B95B40C426CB4A55E47 /* ZERO_CHECK */;
+			targetProxy = BB589D8CA98E4114A7F417B6 /* PBXContainerItemProxy */;
+		};
+		AE971B7AFDB44589B9FFC63C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF97B95B40C426CB4A55E47 /* ZERO_CHECK */;
+			targetProxy = 0E0519C8EFCD41F9B5495D6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		101E191ADFAF44FA9189EC09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		24D7C18404364C5FB3E8302B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		485186215DB9478E892BCF10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		487C8B212237476488E26C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/build";
+			};
+			name = Debug;
+		};
+		52002136EA3945089D9AC121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		7906EA67E3C64DE6B324D2D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = interpolator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		9B307D5908544122A372BBAC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/build";
+			};
+			name = MinSizeRel;
+		};
+		AAD3C219A7A14BE19F2E69BD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B40A0042A31D424485AAC648 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/build";
+			};
+			name = RelWithDebInfo;
+		};
+		B565B24B2ED141B2AA73389D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = interpolator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		CDCB7A4821BB4C01A7802105 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		ED6ABA47F4924D4386089347 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = interpolator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F2B3A7D021794A97AE129A49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/build";
+			};
+			name = Release;
+		};
+		F661CD60F99C440A8FC87A18 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FDBE9E0747514633A39846E5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		FF092A4FD0714AC3B9321FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++11     ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = interpolator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E0CBD0FCD9A42D194369B99 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D7C18404364C5FB3E8302B /* Debug */,
+				485186215DB9478E892BCF10 /* Release */,
+				FDBE9E0747514633A39846E5 /* MinSizeRel */,
+				CDCB7A4821BB4C01A7802105 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		79CED2746D6F4F0282119605 /* Build configuration list for PBXProject "Assignment2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487C8B212237476488E26C3C /* Debug */,
+				F2B3A7D021794A97AE129A49 /* Release */,
+				9B307D5908544122A372BBAC /* MinSizeRel */,
+				B40A0042A31D424485AAC648 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84768C2B43EC4DF09798083E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52002136EA3945089D9AC121 /* Debug */,
+				101E191ADFAF44FA9189EC09 /* Release */,
+				AAD3C219A7A14BE19F2E69BD /* MinSizeRel */,
+				F661CD60F99C440A8FC87A18 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB3B6589DE01481E80726F9F /* Build configuration list for PBXNativeTarget "interpolator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF092A4FD0714AC3B9321FD8 /* Debug */,
+				7906EA67E3C64DE6B324D2D5 /* Release */,
+				ED6ABA47F4924D4386089347 /* MinSizeRel */,
+				B565B24B2ED141B2AA73389D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E0C84D2DD3B4A62B7CBD946 /* Project object */;
+}

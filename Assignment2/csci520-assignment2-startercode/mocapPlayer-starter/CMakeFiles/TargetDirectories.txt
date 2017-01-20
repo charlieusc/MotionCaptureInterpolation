@@ -1,0 +1,3 @@
+/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/CMakeFiles/interpolator.dir
+/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/CMakeFiles/ALL_BUILD.dir
+/Users/yangjialin/GoogleCloudDrive/CSCI_520/Assignment2/csci520-assignment2-startercode/mocapPlayer-starter/CMakeFiles/ZERO_CHECK.dir
